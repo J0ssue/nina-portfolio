@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "NinaBold";
+  font-display: swap;
+  src: url("../../assets/fonts/IbarraRealNova-Bold.ttf");
+}
+
+@font-face {
+  font-family: "NinaMedium";
+  font-display: swap;
+  src: url("../../assets/fonts/IbarraRealNova-Medium.ttf");
+}
+
+@font-face {
+  font-family: "NinaSansRegular";
+  font-display: swap;
+  src: url("../../assets/fonts/PublicSans-Regular.ttf");
+}
+
+body,
+html,
+#root {
+  margin: 0;
+  height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
