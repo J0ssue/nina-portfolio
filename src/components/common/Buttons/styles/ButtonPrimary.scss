@@ -1,0 +1,9 @@
+.primary-button {
+  &:hover svg path {
+    stroke: white;
+  }
+
+  &:disabled svg path {
+    stroke: white;
+  }
+}

@@ -1,15 +1,15 @@
 module.exports = {
-  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx,}"],
+  content: ["./src/**/*.{vue,js,ts,jsx,tsx,}"],
   theme: {
-    colors: {
-      "n-cyan": "#5fb4a2",
-      "n-dark-blue": "#203a4c",
-      "n-grayish": "#33323d",
-      "n-light-gray": "#fafafa",
-      "n-gray": "#eaeaeb",
-      "n-red": "#f43030",
-    },
     extend: {
+      colors: {
+        "n-cyan": "#5fb4a2",
+        "n-dark-blue": "#203a4c",
+        "n-grayish": "#33323d",
+        "n-light-gray": "#fafafa",
+        "n-gray": "#eaeaeb",
+        "n-red": "#f43030",
+      },
       fontFamily: {
         ninaBold: ["'NinaBold'"],
         ninaRegular: ["'NinaMedium'"],
