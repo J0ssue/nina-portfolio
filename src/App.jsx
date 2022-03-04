@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { routes } from "./routes";
 import DefaultLayout from "./layouts/Default";
 
-const ErrorPage = () => <div>error page</div>;
+// const ErrorPage = () => <div>error page</div>;
 
 const LazyLoad = () => {
   nprogress.configure({

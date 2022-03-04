@@ -11,9 +11,10 @@ module.exports = {
         "n-red": "#f43030",
       },
       fontFamily: {
-        ninaBold: ["'NinaBold'"],
-        ninaRegular: ["'NinaMedium'"],
-        ninaSansRegular: ["'NinaSansMedium'"],
+        ninaBold: ["NinaBold"],
+        ninaRegular: ["NinaMedium"],
+        ninaSansRegular: ["NinaSansMedium"],
+        ninaBrandRegular: ["NinaBrandRegular"],
       },
       fontSize: {
         "large-title": "50px",
@@ -23,8 +24,8 @@ module.exports = {
         "small-title-sm": "32px",
         "body-1": "30px",
         "body-1-sm": "16px",
-        "body-2": "30px",
         "body-2-sm": "15px",
+        brand: "28px",
       },
     },
   },
