@@ -32,7 +32,10 @@ const Home = () => {
         </ButtonPrimary>
       </header>
 
-      <section id="about" className="md:flex md:items-stretch md:mb-24">
+      <section
+        id="about"
+        className="md:flex md:items-stretch md:mb-24 lg:items-center"
+      >
         <div className="homepage__nina-image mb-6 md:mr-16">
           <img src={ninaImage} alt="nina" />
         </div>
@@ -40,7 +43,7 @@ const Home = () => {
           <h2 className="font-ninaBold text-medium-title-sm capitalize">
             {homepageConfig.about.title}
           </h2>
-          <p className="font-ninaPublicSans text-body-1-sm">
+          <p className="font-ninaPublicSans text-body-1-sm lg:text-body-2">
             {homepageConfig.about.message}
           </p>
 
@@ -51,17 +54,12 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="md:flex md:justify-between">
-        <h2 className="homepage__contact-title mb-10 font-ninaBold text-medium-title-sm capitalize text-center leading-10 md:text-left">
+      <section className="md:flex md:justify-between md:items-center">
+        <h2 className="homepage__contact-title mb-10 font-ninaBold text-medium-title-sm capitalize text-center leading-10 md:text-left md:mb-0">
           {homepageConfig.contact.title}
         </h2>
 
-        <ButtonPrimary
-          className="block m-auto"
-          isDisabled
-          isSecondary
-          onClick={navigateToAbout}
-        >
+        <ButtonPrimary isDisabled isSecondary onClick={navigateToAbout}>
           {homepageConfig.about.buttonText}
         </ButtonPrimary>
       </section>

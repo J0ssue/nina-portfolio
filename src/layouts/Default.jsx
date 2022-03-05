@@ -6,7 +6,7 @@ import "./styles/Default.scss";
 
 const Default = (props) => {
   return (
-    <div className="default-layout">
+    <div className="default-layout container m-auto">
       <Navbar drawerSize="small" />
       {props.children}
       <Footer />
