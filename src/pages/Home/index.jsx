@@ -60,7 +60,7 @@ const Home = () => {
         </h2>
 
         <ButtonPrimary isDisabled isSecondary onClick={navigateToAbout}>
-          {homepageConfig.about.buttonText}
+          {homepageConfig.contact.buttonText}
         </ButtonPrimary>
       </section>
     </div>
