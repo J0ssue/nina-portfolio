@@ -1,17 +1,20 @@
 import { InstagramOutlined, FacebookOutlined } from "@ant-design/icons";
 import { renderNavigationLinks } from "./helpers";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Footer = () => {
   const navigate = useNavigate();
 
   return (
     <footer className="bg-n-grayish text-white text-body-1-sm w-full p-8 md:flex md:flex-row md:items-center">
-      <p className="font-ninaBrandRegular text-brand tracking-tight m-0 text-center">
-        Nina's Photos
-      </p>
+      <Link
+        to="/"
+        className="block font-ninaBrandRegular text-white text-brand tracking-tight m-0 text-center"
+      >
+        NK Photography
+      </Link>
 
-      <ul className="font-ninaPublicSans text-body-1-sm uppercase flex flex-column justify-center m-0 md:flex-1 md:justify-start md:ml-11">
+      <ul className="font-ninaPublicSans text-body-1-sm uppercase flex flex-column justify-center m-0 md:flex-1 md:justify-start md:ml-11 md:text-body-2">
         {renderNavigationLinks(navigate)}
       </ul>
 

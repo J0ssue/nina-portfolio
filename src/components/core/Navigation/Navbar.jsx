@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import { Drawer } from "antd";
 import { Burger } from "../../common/Icons";
@@ -31,9 +31,12 @@ const Navbar = (props) => {
 
   return (
     <nav className="w-full flex flex-row items-center justify-between p-8">
-      <p className="font-ninaBrandRegular text-brand tracking-tight m-0">
-        Nina's Photos
-      </p>
+      <Link
+        to="/"
+        className="font-ninaBrandRegular text-n-grayish text-brand tracking-tight m-0"
+      >
+        NK Photography
+      </Link>
 
       <button className="md:hidden" onClick={() => triggerDrawer(true)}>
         <Burger />
@@ -50,12 +53,12 @@ const Navbar = (props) => {
         onClose={() => triggerDrawer(false)}
         visible={showDrawer}
       >
-        <ul className="uppercase font-ninaPublicSans text-body-1-sm flex flex-column justify-center">
+        <ul className="uppercase font-ninaPublicSans text-body-1-sm flex flex-column justify-center md:text-body-2">
           {renderNavigationLinks(navigate, triggerDrawer, false)}
         </ul>
       </Drawer>
 
-      <ul className="m-0 uppercase font-ninaPublicSans text-body-1-sm hidden md:block">
+      <ul className="m-0 uppercase font-ninaPublicSans text-body-1-sm hidden md:block md:text-body-2">
         {renderNavigationLinks(navigate)}
       </ul>
     </nav>
