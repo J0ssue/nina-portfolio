@@ -35,11 +35,12 @@ const Navbar = (props) => {
         Nina's Photos
       </p>
 
-      <button onClick={() => triggerDrawer(true)}>
+      <button className="md:hidden" onClick={() => triggerDrawer(true)}>
         <Burger />
       </button>
 
       <Drawer
+        className="md:hidden"
         bodyStyle={{
           color: "white",
           backgroundColor: "#33323d",
@@ -49,10 +50,14 @@ const Navbar = (props) => {
         onClose={() => triggerDrawer(false)}
         visible={showDrawer}
       >
-        <ul className="uppercase text-body-1-sm flex flex-column justify-center">
+        <ul className="uppercase font-ninaPublicSans text-body-1-sm flex flex-column justify-center">
           {renderNavigationLinks(navigate, triggerDrawer, false)}
         </ul>
       </Drawer>
+
+      <ul className="m-0 uppercase font-ninaPublicSans text-body-1-sm hidden md:block">
+        {renderNavigationLinks(navigate)}
+      </ul>
     </nav>
   );
 };

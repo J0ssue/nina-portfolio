@@ -4,11 +4,11 @@ import "./styles/ButtonPrimary.scss";
 
 import { TrippleChevronDown } from "../Icons";
 
-const ButtonSecondary = (props) => {
-  const { onClick, isDisabled, children, isSecondary } = props;
+const ButtonPrimary = (props) => {
+  const { onClick, isDisabled, children, isSecondary, className } = props;
 
   const secondaryClassnames = classnames(
-    "bg-white border p-5 transition-all capitalize",
+    "bg-white border px-8 py-4 transition-all uppercase",
     { "border-black text-black hover:bg-black hover:text-white": !isDisabled },
     { "border-n-gray-500 text-gray-500": isDisabled }
   );
@@ -34,7 +34,7 @@ const ButtonSecondary = (props) => {
   return (
     <button
       disabled={isDisabled}
-      className={buttonClassNames}
+      className={buttonClassNames + " " + className}
       onClick={onClick}
     >
       {!isSecondary && ButtonChevron}
@@ -43,9 +43,10 @@ const ButtonSecondary = (props) => {
   );
 };
 
-ButtonSecondary.defaultProps = {
+ButtonPrimary.defaultProps = {
   isDabled: false,
   isSecondary: false,
+  className: "",
 };
 
-export default ButtonSecondary;
+export default ButtonPrimary;

@@ -5,7 +5,7 @@ export const renderNavigationLinks = (navigateTo, setAction, actionValue) =>
     <li
       onClick={() => {
         navigateTo(route.path);
-        if (setAction && actionValue) {
+        if (setAction) {
           setAction(actionValue);
         }
       }}

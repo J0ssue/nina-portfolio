@@ -15,6 +15,7 @@ module.exports = {
         ninaRegular: ["NinaMedium"],
         ninaSansRegular: ["NinaSansMedium"],
         ninaBrandRegular: ["NinaBrandRegular"],
+        ninaPublicSans: ["NinaPublicSans"],
       },
       fontSize: {
         "large-title": "50px",
