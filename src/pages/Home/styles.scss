@@ -1,4 +1,7 @@
 .homepage {
+  img {
+    background: #f1f1fa;
+  }
   &__hero {
     position: relative;
     @media (min-width: 768px) {

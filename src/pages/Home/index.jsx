@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { imageLoader } from "./functions";
 
 import ninaImage from "../../assets/images/nina.jpg";
 import portrait from "../../assets/images/portrait.jpg";
 import homepageConfig from "../../configs/homepageConfig.json";
 import "./styles.scss";
 
-// import { Image } from "antd";
 import { ButtonPrimary } from "../../components/common/Buttons";
 
 const Home = () => {
@@ -13,14 +13,14 @@ const Home = () => {
     document.getElementById("about").scrollIntoView({ behavior: "smooth" });
   };
 
-  // <div className="homepage__image-container mb-6 md:mr-16">
-  // <Image src={ninaImage} preview={false} />
-  // </div>
+  useEffect(() => {
+    imageLoader();
+  }, []);
 
   return (
     <div className="p-8 flex-1 homepage">
       <header className="homepage__hero mb-24">
-        <img className="homepage__hero-image mb-6" src={portrait} alt="" />
+        <img className="homepage__hero-image mb-6 lazy" src={portrait} alt="" />
         <h1 className="homepage__title font-ninaBold text-medium-title-sm leading-10 md:pr-14 md:pt-14 md:pb-24 md:bg-white">
           {homepageConfig.heroIntroduction}
         </h1>
@@ -37,7 +37,7 @@ const Home = () => {
         className="md:flex md:items-stretch md:mb-24 lg:items-center"
       >
         <div className="homepage__nina-image mb-6 md:mr-16">
-          <img src={ninaImage} alt="nina" />
+          <img className="lazy" src={ninaImage} alt="nina" />
         </div>
         <div className="flex-1">
           <h2 className="font-ninaBold text-medium-title-sm capitalize">
