@@ -15,14 +15,18 @@ const Footer = () => {
         {renderNavigationLinks(navigate)}
       </ul>
 
-      <ul className="flex flex-row justify-center md:m-0">
+      <ul className="flex flex-row justify-center mt-10 md:m-0">
         <li className="mr-2">
           <a
             href="https://instagram.com/ninas_photos"
             target="_blank"
             className="text-white"
           >
-            <InstagramOutlined />
+            <InstagramOutlined
+              style={{
+                fontSize: "36px",
+              }}
+            />
           </a>
         </li>
         <li>
@@ -31,7 +35,11 @@ const Footer = () => {
             target="_blank"
             className="text-white"
           >
-            <FacebookOutlined />
+            <FacebookOutlined
+              style={{
+                fontSize: "36px",
+              }}
+            />
           </a>
         </li>
       </ul>
