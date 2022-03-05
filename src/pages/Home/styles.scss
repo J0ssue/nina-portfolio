@@ -1,0 +1,48 @@
+.homepage {
+  &__hero {
+    position: relative;
+    @media (min-width: 768px) {
+      height: 600px;
+      overflow: hidden;
+    }
+  }
+
+  &__hero-image {
+    @media (min-width: 768px) {
+      position: absolute;
+      top: -87px;
+    }
+  }
+
+  &__title {
+    @media (min-width: 768px) {
+      top: 368px;
+      position: absolute;
+      width: 514px;
+    }
+  }
+
+  &__hero-button {
+    @media (min-width: 768px) {
+      top: 547px;
+      position: absolute;
+    }
+  }
+
+  &__nina-image {
+    @media (min-width: 768px) {
+      width: 281px;
+      overflow: hidden;
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__contact-title {
+    @media (min-width: 768px) {
+      width: 350px;
+    }
+  }
+}
