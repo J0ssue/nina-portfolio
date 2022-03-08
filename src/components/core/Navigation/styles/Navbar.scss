@@ -1,0 +1,7 @@
+.navbar {
+  &__desktop-navigation {
+    li:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+}

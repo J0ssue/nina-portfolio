@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { routes } from "./routes";
 import DefaultLayout from "./layouts/Default";
 import { SyncOutlined } from "@ant-design/icons";
+const PortfolioDetails = lazy(() => import("./pages/PortfolioDetails"));
 
 const NotFound = () => (
   <div>
@@ -53,6 +54,7 @@ function App() {
         <DefaultLayout>
           <Routes>
             {routerList(routes)}
+            <Route path="/portfolio/:id" element={<PortfolioDetails />}></Route>
             <Route path="*" element={<NotFound />}></Route>
           </Routes>
         </DefaultLayout>

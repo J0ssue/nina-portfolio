@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { Drawer } from "antd";
 import { Burger } from "../../common/Icons";
 import { renderNavigationLinks } from "./helpers";
+import "./styles/Navbar.scss";
 
 const Navbar = (props) => {
   const [showDrawer, setShowDrawer] = useState(false);
@@ -30,7 +31,7 @@ const Navbar = (props) => {
   };
 
   return (
-    <nav className="w-full flex flex-row items-center justify-between p-8">
+    <nav className="navbar w-full flex flex-row items-center justify-between p-8">
       <Link
         to="/"
         className="font-ninaBrandRegular text-n-grayish text-brand tracking-tight m-0"
@@ -58,7 +59,7 @@ const Navbar = (props) => {
         </ul>
       </Drawer>
 
-      <ul className="m-0 uppercase font-ninaPublicSans text-body-1-sm hidden md:block md:text-body-2">
+      <ul className="navbar__desktop-navigation m-0 uppercase font-ninaPublicSans text-body-1-sm hidden md:flex md:text-body-2 items-center">
         {renderNavigationLinks(navigate)}
       </ul>
     </nav>
