@@ -4,4 +4,14 @@
       margin-right: 16px;
     }
   }
+
+  &__mobile-navigation {
+    li {
+      text-align: left;
+      align-self: stretch;
+    }
+    li:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
 }

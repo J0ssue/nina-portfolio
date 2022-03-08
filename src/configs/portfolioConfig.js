@@ -2,7 +2,7 @@ import beach from "../assets/images/beach.jpg";
 import nina from "../assets/images/nina.jpg";
 import portrait from "../assets/images/portrait.jpg";
 
-const portraits = [portrait, portrait, portrait];
+const portraits = [portrait, nina, beach];
 const couples = [nina, nina, nina, nina, nina, nina];
 const street = [beach, beach, beach];
 

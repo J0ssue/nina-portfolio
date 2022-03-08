@@ -1,8 +1,9 @@
 import React from "react";
-import { useParams } from "react-router-dom";
-import portfolioConfig from "../../configs/portfolioConfig";
-
 import { Image } from "antd";
+import { useParams } from "react-router-dom";
+
+import portfolioConfig from "../../configs/portfolioConfig";
+import "./style.scss";
 
 const PortfolioDetails = () => {
   const params = useParams();
@@ -11,18 +12,31 @@ const PortfolioDetails = () => {
     (project) => project.title === params.id
   );
 
-  const renderGallery = detailsConfig[0].gallery.map((image, i) => (
-    <div className="w-full md:w-3/12 m-1" key={i}>
-      <Image src={image}></Image>
-    </div>
-  ));
+  const renderGallery = detailsConfig[0].gallery.map((image, i) =>
+    i === 0 ? (
+      <div key={i} className="md:w-2/12 md:m-3">
+        <Image
+          src={image}
+          preview={{
+            getContainer: () => {
+              console.log("here");
+              return <div></div>;
+            },
+            maskClassName: "hello world",
+          }}
+        ></Image>
+      </div>
+    ) : (
+      <div key={i} className="md:w-3/12 md:m-3">
+        <Image src={image}></Image>
+      </div>
+    )
+  );
 
   return (
     <div>
       <Image.PreviewGroup>
-        <div className="flex flex-row flex-wrap justify-between">
-          {renderGallery}
-        </div>
+        <div className="flex flex-row flex-wrap">{renderGallery}</div>
       </Image.PreviewGroup>
     </div>
   );

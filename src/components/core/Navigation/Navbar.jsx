@@ -54,7 +54,7 @@ const Navbar = (props) => {
         onClose={() => triggerDrawer(false)}
         visible={showDrawer}
       >
-        <ul className="uppercase font-ninaPublicSans text-body-1-sm flex flex-column justify-center md:text-body-2">
+        <ul className="navbar__mobile-navigation uppercase font-ninaPublicSans text-body-1 flex flex-col justify-center items-center h-full w-full m-0">
           {renderNavigationLinks(navigate, triggerDrawer, false)}
         </ul>
       </Drawer>
