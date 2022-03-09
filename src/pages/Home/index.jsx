@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { imageLoader } from "./functions";
 
 import ninaImage from "../../assets/images/nina.jpg";
@@ -9,6 +10,7 @@ import "./styles.scss";
 import { ButtonPrimary } from "../../components/common/Buttons";
 
 const Home = () => {
+  const navigate = useNavigate();
   const navigateToAbout = () => {
     document.getElementById("about").scrollIntoView({ behavior: "smooth" });
   };
@@ -47,7 +49,7 @@ const Home = () => {
             {homepageConfig.about.message}
           </p>
 
-          <ButtonPrimary isDisabled isSecondary onClick={navigateToAbout}>
+          <ButtonPrimary isSecondary onClick={() => navigate("/portfolio")}>
             {homepageConfig.about.buttonText}
           </ButtonPrimary>
           <hr className="my-9" />
@@ -59,7 +61,7 @@ const Home = () => {
           {homepageConfig.contact.title}
         </h2>
 
-        <ButtonPrimary isDisabled isSecondary onClick={navigateToAbout}>
+        <ButtonPrimary isSecondary onClick={() => navigate("/contact")}>
           {homepageConfig.contact.buttonText}
         </ButtonPrimary>
       </section>

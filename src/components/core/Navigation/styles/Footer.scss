@@ -1,0 +1,13 @@
+.footer {
+  &__nav-links {
+    li:not(:last-child) {
+      li:not(:last-child) {
+        margin-bottom: 16px;
+      }
+      @media (min-width: 768px) {
+        margin-bottom: 0px;
+        margin-right: 16px;
+      }
+    }
+  }
+}
