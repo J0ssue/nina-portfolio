@@ -1,18 +1,17 @@
-import beach1 from "../assets/images/portfolio/beach/IMG_7002.jpg";
-import beach2 from "../assets/images/portfolio/beach/IMG_8238.jpg";
-import beach3 from "../assets/images/portfolio/beach/IMG_8239.jpg";
-import beach4 from "../assets/images/portfolio/beach/IMG_8241.jpg";
-import beach5 from "../assets/images/portfolio/beach/IMG_8242.jpg";
+import brand2 from "../assets/images/portfolio/beach/IMG_8238.jpg";
+import brand3 from "../assets/images/portfolio/beach/IMG_8239.jpg";
+import brand4 from "../assets/images/portfolio/beach/IMG_8241.jpg";
+import brand5 from "../assets/images/portfolio/beach/IMG_8242.jpg";
+import brand6 from "../assets/images/portfolio/street/IMG_7567.jpg";
 
+import street0 from "../assets/images/portfolio/street/IMG_7002.jpg";
 import street1 from "../assets/images/portfolio/street/IMG_6969.jpg";
 import street2 from "../assets/images/portfolio/street/IMG_6995.jpg";
 import street3 from "../assets/images/portfolio/street/IMG_7533.jpg";
-import street4 from "../assets/images/portfolio/street/IMG_7567.jpg";
 import street5 from "../assets/images/portfolio/street/IMG_8140.jpg";
 import street6 from "../assets/images/portfolio/street/IMG_8184.jpg";
 import street7 from "../assets/images/portfolio/street/IMG_8193.jpg";
 import street8 from "../assets/images/portfolio/street/IMG_8235.jpg";
-import street9 from "../assets/images/portfolio/street/IMG_8265.jpg";
 import street10 from "../assets/images/portfolio/street/IMG_8270.jpg";
 
 import couples1 from "../assets/images/portfolio/couples/IMG_8315-2.jpg";
@@ -46,7 +45,11 @@ import portrait23 from "../assets/images/portfolio/portraits/IMG_8775-2.jpg";
 import portrait24 from "../assets/images/portfolio/portraits/IMG_8852.jpg";
 import portrait25 from "../assets/images/portfolio/portraits/g2.jpg";
 
-const beach = [beach1, beach2, beach3, beach4, beach5];
+const brand = [
+brand6,
+  street3,
+];
+
 const portraits = [
   portrait1,
   portrait2,
@@ -73,19 +76,18 @@ const portraits = [
   portrait24,
   portrait25,
 ];
-const couples = [couples1, couples2, couples3, couples4, couples5];
+const couples = [couples5,couples1, couples2, couples3, couples4];
 const street = [
+  street0,
   street1,
   street2,
-  street3,
-  street4,
-  street5,
   street5,
   street6,
   street7,
   street8,
-  street9,
   street10,
+brand2,
+brand4,
 ];
 
 const portfolio = {
@@ -106,15 +108,15 @@ const portfolio = {
     },
     {
       title: "street",
-      cover: street[0],
+      cover: street[8],
       gallery: street,
       path: "/portfolio/street",
     },
     {
-      title: "beach",
-      cover: beach[0],
-      gallery: street,
-      path: "/portfolio/beach",
+      title: "brand",
+      cover: brand[0],
+      gallery: brand,
+      path: "/portfolio/brand",
     },
   ],
 };

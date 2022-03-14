@@ -15,7 +15,7 @@ const Footer = () => {
         NK Photography
       </Link>
 
-      <ul className="footer__nav-links font-ninaPublicSans text-body-1-sm uppercase flex flex-col items-center justify-center m-0 md:flex-1 md:justify-start md:ml-11 md:text-body-2">
+      <ul className="footer__nav-links font-ninaPublicSans text-body-1-sm uppercase flex flex-col items-center justify-center m-0 md:flex-row md:flex-1 md:justify-start md:ml-11 md:text-body-2">
         {renderNavigationLinks(navigate)}
       </ul>
 
