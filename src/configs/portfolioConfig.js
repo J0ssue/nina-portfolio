@@ -1,8 +1,11 @@
+// const images  = require.context("../assets/images/portfolio/beach")
 import brand2 from "../assets/images/portfolio/beach/IMG_8238.jpg";
 import brand3 from "../assets/images/portfolio/beach/IMG_8239.jpg";
 import brand4 from "../assets/images/portfolio/beach/IMG_8241.jpg";
 import brand5 from "../assets/images/portfolio/beach/IMG_8242.jpg";
 import brand6 from "../assets/images/portfolio/street/IMG_7567.jpg";
+import brand7 from "../assets/images/portfolio/beach/IMG_7565-3.jpg";
+import brand8 from "../assets/images/portfolio/beach/IMG_7616.jpg";
 
 import street0 from "../assets/images/portfolio/street/IMG_7002.jpg";
 import street1 from "../assets/images/portfolio/street/IMG_6969.jpg";
@@ -46,7 +49,9 @@ import portrait24 from "../assets/images/portfolio/portraits/IMG_8852.jpg";
 import portrait25 from "../assets/images/portfolio/portraits/g2.jpg";
 
 const brand = [
-brand6,
+  brand7,
+  brand6,
+  brand8,
   street3,
 ];
 
@@ -114,7 +119,7 @@ const portfolio = {
     },
     {
       title: "brand",
-      cover: brand[0],
+      cover: brand[2],
       gallery: brand,
       path: "/portfolio/brand",
     },

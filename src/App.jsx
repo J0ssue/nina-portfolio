@@ -53,9 +53,9 @@ function App() {
       <Router>
         <DefaultLayout>
           <Routes>
-            {routerList(routes)}
-            <Route path="/portfolio/:id" element={<PortfolioDetails />}></Route>
-            <Route path="*" element={<NotFound />}></Route>
+              {routerList(routes)}
+              <Route path="/portfolio/:id" element={<PortfolioDetails />}></Route>
+              <Route path="*" element={<NotFound />}></Route>
           </Routes>
         </DefaultLayout>
       </Router>
