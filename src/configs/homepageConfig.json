@@ -3,6 +3,15 @@
   "about": {
     "title": "about me",
     "message": "Passionate Serbian photographer based in Lisbon. I specialise in portrait and editorial photography.",
+    "messages": [
+"Hi there!",
+"I’m Nina, a girl from Serbia who decided to move to Portugal and chase her dreams.",
+"I always had a passion for photography, but also for connecting with people, hearing their stories and understanding them.",
+"I enjoy the process of creating art, making people feel seen and beautiful.",
+"I mostly do portrait photography, with a bit of fashion and love mixed in as well.",
+"Projects with brand, product, event and street photography are also visible in my portfolio!",
+"Feel free to take a better look at it and reach out to me if you’d like to work together!",
+"Let’s capture your best moments 💖"],
     "buttonText": "go to portfolio"
   },
   "contact": {

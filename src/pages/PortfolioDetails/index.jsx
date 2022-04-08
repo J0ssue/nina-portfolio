@@ -35,6 +35,7 @@ const PortfolioDetails = () => {
 
   return (
     <div>
+      <p className="text-center my-4 text-body-1-sm lg:text-body-3 w-2/5 m-auto">{detailsConfig[0].message}</p>
       <Image.PreviewGroup>
         <div className="flex flex-row flex-wrap">{renderGallery}</div>
       </Image.PreviewGroup>

@@ -25,6 +25,7 @@ module.exports = {
         "small-title-sm": "32px",
         "body-1": "30px",
         "body-2": "26px",
+        "body-3": "22px",
         "body-1-sm": "16px",
         "body-2-sm": "15px",
         brand: "28px",

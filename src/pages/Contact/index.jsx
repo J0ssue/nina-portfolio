@@ -10,6 +10,7 @@ const Contact = () => {
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
   const form = useRef();
+const { TextArea } = Input;
 
   useEffect(() => {
     return () => {
@@ -127,7 +128,7 @@ const Contact = () => {
             name="message"
             rules={[{ required: true, message: "Please input a message!" }]}
           >
-            <Input placeholder="Write message" />
+            <TextArea rows={4} placeholder="Write message" className="resize-none" />
           </Form.Item>
 
           <Form.Item wrapperCol={{ offset: 8, span: 16 }}>

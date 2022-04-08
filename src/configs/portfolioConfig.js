@@ -47,6 +47,9 @@ import portrait22 from "../assets/images/portfolio/portraits/IMG_8545.jpg";
 import portrait23 from "../assets/images/portfolio/portraits/IMG_8775-2.jpg";
 import portrait24 from "../assets/images/portfolio/portraits/IMG_8852.jpg";
 import portrait25 from "../assets/images/portfolio/portraits/g2.jpg";
+import portrait26 from "../assets/images/portfolio/portraits/IMG_9012.jpg"
+ import portrait27 from "../assets/images/portfolio/portraits/IMG_9064.jpg"
+ import portrait28 from "../assets/images/portfolio/portraits/IMG_9066-2.jpg"
 
 const brand = [
   brand7,
@@ -56,6 +59,9 @@ const brand = [
 ];
 
 const portraits = [
+ portrait27,
+portrait26,
+ portrait28,
   portrait1,
   portrait2,
   portrait3,
@@ -101,18 +107,21 @@ const portfolio = {
   projects: [
     {
       title: "portraits",
+      message: "In this album you will see some of my favorite portraits of the beautiful faces I’ve worked eith so far. Mixed with a few photos from events.",
       cover: portraits[0],
       gallery: portraits,
       path: "/portfolio/portraits",
     },
     {
       title: "couples",
+      message: "Here you can see my work with lovely couples. Don’t you just love love! I find that it inspires me a lot, working with people in love and capturing their emotions.",
       cover: couples[0],
       gallery: couples,
       path: "/portfolio/couples",
     },
     {
       title: "street",
+      message: "This album is with street photography, mostly done for my own enjoyment.",
       cover: street[8],
       gallery: street,
       path: "/portfolio/street",

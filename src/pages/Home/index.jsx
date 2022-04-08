@@ -17,6 +17,10 @@ const Home = () => {
     imageLoader();
   }, []);
 
+  const getAboutMessageParagraphs = homepageConfig.about.messages.map((m,i) => {
+    return (<p key={i} className="font-ninaPublicSans mb-2 text-body-1-sm lg:text-body-3">{m}</p>)
+  })
+
   return (
     <div className="p-8 flex-1 homepage">
       <header className="homepage__hero mb-24">
@@ -43,9 +47,9 @@ const Home = () => {
           <h2 className="font-ninaBold text-medium-title-sm capitalize">
             {homepageConfig.about.title}
           </h2>
-          <p className="font-ninaPublicSans text-body-1-sm lg:text-body-2">
-            {homepageConfig.about.message}
-          </p>
+          <div>
+            {getAboutMessageParagraphs}
+          </div>
 
           <ButtonPrimary isSecondary onClick={() => navigate("/portfolio")}>
             {homepageConfig.about.buttonText}
