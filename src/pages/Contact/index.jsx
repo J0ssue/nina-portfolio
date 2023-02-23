@@ -25,7 +25,7 @@ const { TextArea } = Input;
       .send(
         import.meta.env.VITE_SERVICE_ID,
         import.meta.env.VITE_TEMPLATE_ID,
-        { ...values, from_email: values.email },
+        { ...values, from_email: values.email, email: values.email },
         import.meta.env.VITE_USER_ID
       )
       .then(
