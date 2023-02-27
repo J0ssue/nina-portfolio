@@ -96,7 +96,8 @@ const { TextArea } = Input;
         <h2 className="font-ninaBold text-medium-title-sm capitalize mt-10 w-full text-center md:w-2/4">
           {contactpageConfig.form.title}
         </h2>
-        <Form
+        Feel free to contact by sending me a message to this email <b style={{marginLeft: "10px"}}>ninaknezz00@gmail.com</b>
+        {/* <Form
           ref={form}
           name="basic"
           labelCol={{ span: 8 }}
@@ -143,7 +144,7 @@ const { TextArea } = Input;
               type="success"
             />
           )}
-        </Form>
+        </Form> */}
       </div>
     </div>
   );
